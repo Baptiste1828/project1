@@ -150,7 +150,7 @@
 
 
     
-/*MEDIA SCREEN*/
+/*MEDIA QUERIES*/
     @media screen and (max-width: 425px) {
 
         main {
@@ -189,7 +189,7 @@
         }*/
 
 
-    @media screen and (min-width:424px) and (max-width: 1024px) {
+    @media screen and (min-width:426px) and (max-width: 1024px) {
         main {
             display:block;
 
