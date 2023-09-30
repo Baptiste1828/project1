@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+    <main>
+
+        
+    <form>
+        <fieldset>
+            <h2>Formulaire de réservation</h2>
+            <label for="username">Nom :</label>
+            <input type="text" id="username" name="username" placeholder="Nom">
+
+            <label for="surname">Prénom :</label>
+            <input type="text" id="surname" name="surname" placeholder="Prénom">
+
+            <label for="courriel">Email :</label>
+            <input type="email" id="courriel" name="courriel" placeholder="dupont@boitemail.fr">
+        
+            <label for="tel">Tél :</label>
+            <input type="tel" id="tel" name="tel">
+
+
+            <p>Repas du : &nbsp;&nbsp;&nbsp;&nbsp;
+            Midi<input type="radio" name="repas" id="repas_midi" value="Midi" style="margin-right: 30px;">
+
+            Soir<input type="radio" name="repas" id="repas_soir" value="Soir">
+            </p>
+
+            <label for="réservation">Nombre de personne :</label>
+            <input type="text" id="password" name="réservation" placeholder="Nombre de couverts">
+
+            <label for="date">Date du repas :</label>
+            <input type="date" id="date" name="date">
+
+            <label for="heure">Heure d'arrivée prévue :</label>
+            <input type="text" id="heure" name="heure">
+
+            <label for="comments">Commentaires / Allergies :</label>
+            <textarea id="comments" name="comments" rows="3" placeholder="Entrez vos commentaires ici"></textarea>
+
+        <div class="button">
+            <input type="submit" value="RESERVATION">
+        </div>
+        
+
+        </fieldset>
+    </form>
+    
+
+    
+    <section>
+        <h2>Adresse du restaurant</h2>
+        
+            <div class="adresse">
+                <p>Le REVELATIO</p>
+                <p>Restaurant gastronomique situé à Versailles 10 rue de la bonne bouffe.</p>
+                <p>Cuisine de passion, cuisine de saison...</p>
+                <p>Yannis, Rudy, Baptiste et Rachid seront heureux de vous accueillir dans leur restaurant afin de vous faire partager leur passion
+                pour les arts de la table et les voyages.</p>
+            </div>
+
+<!--TEST diapo photo-->   
+              <p><img height="198" onmouseout="this.src='image_adresse.png'"; onmouseover="this.src='image2.png'"; src="image_adresse.png"/></p> 
+
+
+             <!--<div class="slide"> 
+                <div class="slider-content">
+                    <img src="image_adresse.png">     
+                    <img src="image2.png">
+                </div>
+            </div>-->
+
+            </section>  
+    
+
+</main>
+
+
+<!--<footer><p>© 2023 Portfolio by Bibi. Tous droits réservés.</p></footer>-->
+
+
+</body>
+
+
+</html>

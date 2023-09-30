@@ -1,0 +1,228 @@
+
+ /*Test police*
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('font/alexbrush-regular-webfont.eot');
+    src: url('font/alexbrush-regular-webfont.eot') format('embedded-opentype'),
+         url('font/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('font/alexbrush-regular-webfont.woff') format('woff'),
+         url('font/alexbrush-regular-webfont.ttf') format('truetype'),
+         url('font/alexbrush-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+             
+       section>div>p {
+        font-family: alex_brushregular;
+        font-size: 1.5em;
+        
+        
+       } */ 
+       
+
+
+        body { 
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        }
+
+
+        main{
+            display: inline-flex;
+            margin: 1% 5% 1% 5%;
+        }
+
+        section {
+            margin-left: 10%;
+        }
+        
+       
+       /* Style pour le formulaire */
+
+
+       p, h2, form { 
+        display: block;
+        text-align: center;
+    }
+
+
+
+        form {
+            width: 30%;
+        }
+
+
+         h2 {
+            font-size: x-large;
+            /*max-width: 300px;*/
+            margin: 0 auto;
+        }
+
+        section>h2 {
+            margin-top: 10px;
+        }
+
+        form>h2 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+
+        input[type="submit"],
+
+        textarea {
+            width: 70%;
+
+            padding: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Style pour le bouton de soumission */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: /*10px 20px*/ 20px 30px;
+            border-radius: /*4px*/ 50%;
+            cursor: pointer;
+        }
+
+        /* Style pour le bouton de soumission au survol */
+        input[type="submit"]:hover {
+            /* background-color: rgb(164, 0, 179); */
+            background-color: #D2A63C;
+
+        }
+
+        input[type="submit"]{
+            font-size: 0.75em;
+        }
+
+    fieldset, section, footer {
+        border:1px solid goldenrod;
+    }
+
+    img {
+        /*width: 600px;*/
+        width: 80%;
+
+        height: 400px;
+        padding-top: 50px;
+        
+    }
+
+/*TEST diapo en continu*/     
+
+/*FIN test diapo continu*/
+
+
+    /*footer {
+        
+        border: 1px solid goldenrod;
+        text-align: center;
+
+        display: block;
+        justify-content: center;
+    }*/
+
+    /*footer {
+        
+        text-align: center;
+        width: 90%;
+        height: 5%;
+        margin-top: 5px;       
+    }*/
+
+
+
+
+
+    
+/*MEDIA SCREEN*/
+    @media screen and (max-width: 425px) {
+
+        main {
+            display:block;
+
+            width: 100%;
+            
+        }  
+        
+        form {
+            width: auto;
+        }
+
+        section {
+            display: block;
+            margin-left: 0;
+        }
+        
+        
+        img
+        {
+         
+            width: 100%;
+            height: auto;
+       }
+
+        }
+
+        section {
+        margin-top: 5px;
+
+        }
+
+        /*footer {
+        font-size: 0.7rem;
+        }*/
+
+
+    @media screen and (min-width:424px) and (max-width: 1024px) {
+        main {
+            display:block;
+
+            width: 100%;
+            
+        }  
+        
+        form {
+            width: auto;
+                    
+        }
+
+        section {
+            display: block;
+            margin-left: 0;
+        }
+        
+        
+        img {
+         
+            width: 100%;
+            height: auto;
+       }
+      
+       .button {
+        width: 50%;
+        display: inline-block;
+       }
+
+
+    }
+
+
+
+
+    
