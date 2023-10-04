@@ -1,22 +1,214 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Je sais pas quoi</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <title>Ma Page Web</title>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
-        <hr class="title" />
-        <h1 class="title" >Le restaurant</h1>
-        <hr class="title" />
-        <img src="image/imgPresentationRestaurant.jpg" />
-    </main>
-</body>
-<footer>
+    
+    <div class="top-block"> 
+            <hr class="line-left-top"></hr>
+            <h1 class="menu-up">Nos menus</h1>
+            <hr class="line-right-top"></hr>
+             
+    </div>
 
-</footer>
+    <div class="menu-first">
+            <div class="text-menu-first">
+                <h2 id="title-first">Mare</h2>
+
+                <hr class="line-menu-left"/>
+            
+                <p class="p-hidden1"> Nos saveurs marines </p>
+                <ul class="hidden-list">
+                    
+                    <li>Trois entrées</li></i>
+                    <li>Trois plats</li>
+                    <li>Trois desserts</li>
+                    </ul>
+                  
+               
+            </div>
+
+            <div class="image-first">
+                <img src="mare other.jpg" alt="Image de fruits de mer">
+            </div>
+    </div>
+
+    <div class="menu-second">
+        <div class="image-second">
+            <img src="street riz.jpg" alt="Image street food">
+        </div>
+        <div class="text-menu-second">
+            <h2 class="title-second">Cibus Viarum</h2>
+
+            <hr class="line-menu-right"/>
+            <p class="p-hidden2"> Nos audacieuses recettes rapides </p>
+
+                    <ul class="hidden-list">
+                        <li>Trois entrées</li>
+                        <li>Trois plats</li>
+                        <li>Trois desserts</li>
+                    </ul>
+        </div>
+    </div>
+
+    <div class="menu-third">
+            <div class="text-menu-third">
+                <h2 class="title-third">Coctio loci</h2>
+
+                <hr class="line-menu-left"/>
+                <p class="p-hidden3"> La cuisine locale </p>
+                <ul class="hidden-list">
+                    <li>Trois entrées</li>
+                    <li>Trois plats</li>
+                    <li>Trois desserts</li>
+                </ul>
+            </div>
+            <div class="image-third"><img src="terroir.jpg" alt="Image du ter ter"></div>
+    </div>
+
+
+    <div class="menu-fourth">
+            <div class="image-fourth">
+                <img src="veggie.jpg" alt="Image legumes">
+            </div>
+            <div class="text-menu-fourth">
+                <h2 class="title-fourth">Modus Hortus</h2>
+
+                <hr class="line-menu-right"/>
+                <p class="p-hidden4"> Notre selection végétérienne </p>
+                <ul class="hidden-list">
+                    <li>Trois entrées</li>
+                    <li>Trois plats</li>
+                    <li>Trois desserts</li>
+                </ul>
+                
+            </div>
+        </div>
+
+
+    <div class="menu-fifth">
+            <div class="text-menu-fifth">
+                <h2 class="title-fifth">Exploratio Cibaria</h2>
+
+                <hr class="line-menu-left"/>
+                <p class="p-hidden5"> La Révélation </p>
+                <ul class="hidden-list">
+                    <li>Trois entrées</li>
+                    <li>Trois plats</li>
+                    <li>Trois desserts</li>
+                </ul>
+            </div>
+            <div class="image-fifth"><img src="porte.jpg" alt="Image portes"></div>
+    </div>
+
+
+  
+    <section id="reservation-adresse">    
+
+    <form>
+    <fieldset>
+            <h2>Formulaire de réservation</h2>
+            <label for="username">Nom :</label>
+            <input type="text" id="username" name="username" placeholder="Nom">
+
+            <label for="surname">Prénom :</label>
+            <input type="text" id="surname" name="surname" placeholder="Prénom">
+
+            <label for="courriel">Email :</label>
+            <input type="email" id="courriel" name="courriel" placeholder="dupont@boitemail.fr">
+        
+            <label for="tel">Tél :</label>
+            <input type="tel" id="tel" name="tel">
+
+
+            <p>Repas du : &nbsp;&nbsp;&nbsp;&nbsp;
+            Midi<input type="radio" name="repas" id="repas_midi" value="Midi" style="margin-right: 30px;">
+
+            Soir<input type="radio" name="repas" id="repas_soir" value="Soir">
+            </p>
+
+            <label for="réservation">Nombre de personne :</label>
+            <input type="text" id="password" name="réservation" placeholder="Nombre de couverts">
+
+            <label for="date">Date du repas :</label>
+            <input type="date" id="date" name="date">
+
+            <label for="heure">Heure d'arrivée prévue :</label>
+            <input type="text" id="heure" name="heure">
+
+            <label for="comments">Commentaires / Allergies :</label>
+            <textarea id="comments" name="comments" rows="3" placeholder="Entrez vos commentaires ici"></textarea>
+
+        <div class="button">
+            <input type="submit" value="RESERVATION">
+    
+
+        </fieldset>
+    </form>
+</div>
+    
+    <section id="adresse">
+        <h2>Adresse du restaurant</h2>
+        
+            <div class="adresse">
+                <p>Le REVELATIO</p>
+                <p>Restaurant gastronomique situé à Versailles 10 rue de la bonne bouffe.</p>
+                <p>Cuisine de passion, cuisine de saison...</p>
+                <p>Yannis, Rudy, Baptiste et Rachid seront heureux de vous accueillir dans leur restaurant afin de vous faire partager leur passion
+                pour les arts de la table et les voyages.</p>
+            </div>
+
+  
+              <!--<p><img height="198" onmouseout="this.src='image_adresse.png'"; onmouseover="this.src='image2.png'"; src="image_adresse.png"/></p>--> 
+
+
+<!--TEST diapo photo--> 
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="image_adresse.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="image2.png" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img src="photo3.png" style="width:100%">
+    </div>
+  
+</div>   
+<!--FIN TEST diapo-->
+
+
+    </section>
+    </section>
+    </main>
+    <footer>
+        <div class="social">
+          <a href="http://facebook.fr" target="_blank">
+               <i class="fa-brands fa-facebook fa-xl"></i>
+          </a>
+        </div>
+        <div class="social">
+            <a href="http://twitter.com" target="_blank">
+                <i class="fa-brands fa-twitter fa-xl"></i>
+            </a>
+        </div>
+        <div class="social">
+            <a href="http://instagram.com" target="_blank">
+                 <i class="fa-brands fa-instagram fa-xl"></i>
+            </a>
+        </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9ec0a30caf.js" crossorigin="anonymous"></script>
+</body>
 </html>
