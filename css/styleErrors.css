@@ -1,0 +1,36 @@
+body {
+    background-color: #f3f3e6;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #1d1912;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    font-size: 2rem;
+    color: #1d1912;
+}
+
+a {
+    font-size: 2rem;
+    color: #1d1912;
+    text-decoration: underline;
+    margin-top: 50%;
+}
+
+a:hover {
+    color: #bb8525;
+    font-size: 2.5rem;
+}
+
+body main div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
