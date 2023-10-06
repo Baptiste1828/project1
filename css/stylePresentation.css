@@ -200,6 +200,9 @@ body main section#presentation div:last-of-type p {
         width: 80%;
         margin: 0.5rem 10% 0 10%;
     }
+    body main section#presentation div:first-of-type hr:first-of-type {
+        margin-top: 3rem;
+    }
     body main section#presentation div:last-of-type p {
         text-align: center;
         margin: 0 15% 0 15%;
@@ -221,5 +224,11 @@ body main section#presentation div:last-of-type p {
     }
     div.letitre {
         font-size: large;
+    }
+    .imageScroll {
+        animation-fill-mode: none;
+    }
+    .imageScrollBis {
+        animation-fill-mode: none;
     }
 }
