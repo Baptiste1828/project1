@@ -13,6 +13,8 @@ if (empty(trim($_POST['réservation'])))
     $errors[] = 'Le nombre de couverts est obligatoire.';
 if (trim($_POST['réservation']) <= 0)
     $errors[] = 'Le nombre de couvert ne peux pas être inférieur à 1.';
+if (trim($_POST['réservation']) > 56)
+    $errors[] = 'Le nombre maximum de couverts est de 56. Si vous souhaitez réservez pour plus de personnes, merci de nous contacter au 06 00 00 00 00';
 if (empty(trim($_POST['date'])))
     $errors[] = 'La date de la réservation est obligatoire.';
 if (empty(trim($_POST['heure'])))
@@ -37,7 +39,7 @@ if (!empty($errors)) {
 <body>
 
     <header>
-        <h1>Réservation confirmé !</h1>
+        <h1>Merci de nous avoir écouté !</h1>
     </header>
 
     <main>
