@@ -97,11 +97,6 @@ hr.lineTitle {
     background: #bb8525;
 }
 
-body p {
-    font-size: 1.75vw;
-    text-align: center;
-}
-
 body main section#presentation {
     overflow-x: hidden;
 }
@@ -113,7 +108,8 @@ body main section#presentation div:first-of-type {
 }
 
 body main section#presentation div:first-of-type h1 {
-    font-size: 3.3vw;
+    font-size: 3.5rem;
+    font-style: italic;
     text-align: center;
     color: #1d1912;
     margin-top: 5.1rem;
@@ -133,16 +129,17 @@ body main section#presentation div:first-of-type figure#firstPresImage {
 }
 
 body main section#presentation div:first-of-type figure#firstPresImage img {
-    border-radius: 5%;
+    border-radius: 20% 10% / 10% 20%;
     width: 40%;
     margin: 4rem 0 2rem 0;
+    box-shadow: 8px 8px 2px 1px rgb(187, 133, 37);
 }
 
 body main section#presentation div:first-of-type p {
     grid-column: 1 / 4;
-    font-size: 1.75vw;
+    font-size: /*1.75vw*/large;
     text-align: center;
-    margin: 0 15% 0 15%;
+    margin: 0 15% 6rem 15%;
 }
 
 body main section#presentation div:last-of-type {
@@ -159,14 +156,15 @@ body main section#presentation div:last-of-type figure#secondPresImage {
 }
 
 body main section#presentation div:last-of-type figure#secondPresImage img {
-    border-radius: 5%;
+    border-radius: 20% 10% / 10% 20%;
     width: 64%;
     height: auto;
     margin: 2rem 0 2rem 0;
+    box-shadow: 8px 8px 2px 1px rgb(187, 133, 37);
 }
 
 body main section#presentation div:last-of-type p {
-    font-size: 1.75vw;
+    font-size: large;
     text-align: left;
     margin: 0 22% 0 2rem;
 }
@@ -175,22 +173,22 @@ body main section#presentation div:last-of-type p {
 ** MediaQuerys pour le téléphone
 */
 
-@media screen and (max-width: 426px){
+@media screen and (max-width: 425px){
     body main section#presentation div:first-of-type {
         grid-template-columns: 1fr;
     }
     body main section#presentation div:first-of-type figure#firstPresImage {
-        left: 18%;
+        left: 0;
         grid-column: 1 / 2;
         opacity: 1;
     }
     body main section#presentation div:first-of-type figure#firstPresImage img {
-        width: 64%;
-        margin: 1rem 0 0.5rem 0;
+        width: 70%;
+        margin: 4rem 15% 1rem 15%;
     }
     body main section#presentation div:first-of-type p {
         grid-column: 1 / 2;
-        margin: 0 15% 0 15%;
+        margin: 0 15% 3rem 15%;
     }
     body main section#presentation div:last-of-type {
         grid-template-columns: 1fr;
@@ -207,12 +205,12 @@ body main section#presentation div:last-of-type p {
         margin: 0 15% 0 15%;
     }
     body main section#presentation div:last-of-type figure#secondPresImage {
-        left: 18%;
+        left: 0;
         opacity: 1;
     }
     body main section#presentation div:last-of-type figure#secondPresImage img {
-        width: 64%;
+        width: 70%;
         height: auto;
-        margin: 0.5rem 0 0.5rem 0;
+        margin: 0.5rem 15% 0.5rem 15%;
     }
 }

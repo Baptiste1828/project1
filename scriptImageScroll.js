@@ -4,7 +4,7 @@ window.addEventListener("scroll", function () {
         console.log("derniere_position_de_scroll_connue ", derniere_position_de_scroll_connue);
         const firstFig = document.querySelector("#firstPresImage");
 
-        if ((window.scrollY >= 2100 /*&& window.scrollY <= 2700*/) && !firstFig.classList.contains("imageScroll")) {
+        if ((window.scrollY >= 2100 /*&& window.scrollY <= 2700*/) && !firstFig.classList.contains("imageScroll") && window.matchMedia("(min-width: 426px)").matches) {
             firstFig.classList.add("imageScroll");
           /*  if (firstFig.classList.contains("imageRemoveScroll")) {
                 firstFig.classList.remove("imageRemoveScroll");
@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
 
         const secondFig = document.querySelector("#secondPresImage");
 
-        if (window.scrollY >= 2600 && !secondFig.classList.contains("imageScrollBis")) {
+        if (window.scrollY >= 2600 && !secondFig.classList.contains("imageScrollBis") && window.matchMedia("(min-width: 426px)").matches) {
             secondFig.classList.add("imageScrollBis");
         }
     }
