@@ -213,4 +213,13 @@ body main section#presentation div:last-of-type p {
         height: auto;
         margin: 0.5rem 15% 0.5rem 15%;
     }
+    header {
+        display: none;
+    }
+    header nav.nav-link {
+        display: none;
+    }
+    div.letitre {
+        font-size: large;
+    }
 }
